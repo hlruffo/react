@@ -1,3 +1,5 @@
+import { Banner } from "@/components/Banner";
+import { List } from "@/components/List";
 export const metadata = {
     title: "Filmes",
     description: "Os melhores filmes de todos os tempos",
@@ -6,8 +8,9 @@ export const metadata = {
 
 export default function PageFilmes() {
     return (
-        <div>
-        <h1>Filmes</h1>
+        <div>            
+            <Banner title="Filmes" type="filmes"/>
+            <List type="filmes"/>
         </div>
     );
     }
